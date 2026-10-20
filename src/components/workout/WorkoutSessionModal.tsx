@@ -16,6 +16,7 @@ import {
 import { useAppStore } from '../../core/store/appStore';
 import { getExerciseById } from '../../data/exercises';
 import { WorkoutDayPlan } from '../../types';
+import { ExerciseAnimationVisualizer } from '../common/ExerciseAnimationVisualizer';
 
 interface WorkoutSessionModalProps {
   dayPlan: WorkoutDayPlan;
@@ -408,6 +409,11 @@ export const WorkoutSessionModal: React.FC<WorkoutSessionModalProps> = ({
                     )}
                   </div>
                 </div>
+
+                {/* Dynamic Exercise Animation & Posture Guide */}
+                {currentExercise && (
+                  <ExerciseAnimationVisualizer exerciseId={currentExercise.id} />
+                )}
 
                 {/* Instructions Snippet */}
                 <div className="bg-slate-50 p-3.5 rounded-2xl border border-slate-200/80 space-y-2 text-xs text-slate-700">

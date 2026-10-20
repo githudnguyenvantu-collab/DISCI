@@ -1,6 +1,6 @@
-import React from 'react';
 import { X, CheckCircle, AlertOctagon, HelpCircle, VolumeX, ShieldCheck } from 'lucide-react';
 import { getExerciseById } from '../../data/exercises';
+import { ExerciseAnimationVisualizer } from '../common/ExerciseAnimationVisualizer';
 
 interface ExerciseDetailModalProps {
   exerciseId: string | null;
@@ -47,6 +47,9 @@ export const ExerciseDetailModal: React.FC<ExerciseDetailModalProps> = ({
             <X className="w-5 h-5" />
           </button>
         </div>
+
+        {/* Dynamic Exercise Animation & Posture Guide */}
+        <ExerciseAnimationVisualizer exerciseId={exercise.id} />
 
         {/* Target Muscles */}
         <div>
