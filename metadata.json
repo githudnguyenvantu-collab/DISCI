@@ -1,0 +1,6 @@
+{
+  "name": "DISCI - Ứng Dụng Luyện Tập Tại Nhà Thông Minh",
+  "description": "Ứng dụng luyện tập thể chất tại nhà với chi phí tối ưu, cá nhân hóa lịch tập, phân tích sức khỏe an toàn và chế độ ký túc xá cho người Việt trẻ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
